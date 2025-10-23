@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.24)
 project(HelloLib LANGUAGES CXX)
 
 # Optionally allow source rebuilds for debugging or future expansion
-option(HELLOLIB_PRECOMPILED "Use precompiled binary" ON)
+option(HELLOLIB_PRECOMPILED "Use precompiled binary" OFF)
 
 if(HELLOLIB_PRECOMPILED)
     add_library(HelloLib STATIC IMPORTED GLOBAL)
